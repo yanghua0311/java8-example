@@ -10,7 +10,6 @@ public class DemoMethodRefere {
 	String getForNew() {
 		return "young";
 	}
-
 	static void test() {
 		DemoMethodRefere de = new DemoMethodRefere();
 		Supplier<String> sup = de::getForNew; // 实例方法引用

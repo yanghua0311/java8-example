@@ -1,31 +1,60 @@
 package com.young.java8.pojo;
 
-public class User {
-	@Override
-	public String toString() {
-		return "User [age=" + age + ", name=" + name + "]";
-	}
-	private Integer age;
-	private String name;
+import java.util.Date;
 
-	public User(Integer age, String name) {
+public class User {
+	/**
+	 * 
+	 */
+	public User() {
 		super();
-		this.age = age;
-		this.name = name;
 	}
-	public User( String name) {
-		this.name = name;
+	private Long userId;
+	private String userName;
+	private Date loginTime;
+	/**
+	 * @param i
+	 * @param string
+	 */
+	public User(int i, String string) {
+		// TODO Auto-generated constructor stub
 	}
-	public Integer getAge() {
-		return age;
+	/**
+	 * @return the userId
+	 */
+	public Long getUserId() {
+		return userId;
 	}
-	public void setAge(Integer age) {
-		this.age = age;
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
-	public String getName() {
-		return name;
+	/**
+	 * @return the userName
+	 */
+	public String getUserName() {
+		return userName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	/**
+	 * @param userName the userName to set
+	 */
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
+	/**
+	 * @return the loginTime
+	 */
+	public Date getLoginTime() {
+		return loginTime;
+	}
+	/**
+	 * @param loginTime the loginTime to set
+	 */
+	public void setLoginTime(Date loginTime) {
+		this.loginTime = loginTime;
+	}
+
+	
 }

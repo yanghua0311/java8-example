@@ -21,12 +21,12 @@ public class StreamApiDemo02 {
 		User u5=new User(11,"tomas");
 		User u6=new User(11,"tom");
 		Stream<User> userStream=Arrays.asList(u1,u2,u3,u4,u5,u6).stream();
-		userStream.sorted((o1,o2)->o1.getAge()-o2.getAge()).forEach(System.out::println);
+//		userStream.sorted((o1,o2)->o1.getAge()-o2.getAge()).forEach(System.out::println);
 	}
 	//通过构造方法引用获取User对象的Stream流
 	static void parse(){
 		String names="tom,jarry,notor,tomas,david"; 
-		Stream.of(names.split(",")).map(User::new).forEach(System.out::println);;
+//		Stream.of(names.split(",")).map(User::new).forEach(System.out::println);;
 	}
 	
 	static void reduce(){
@@ -63,7 +63,7 @@ public class StreamApiDemo02 {
 		//dis();
 		//parse();
 		//reduce();
-		match();
+		//match();
 		mapto();
 	}
 }

@@ -1,5 +1,8 @@
 package com.young.java8;
 
+import java.text.SimpleDateFormat;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
@@ -7,8 +10,9 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class DemoLambda {
-
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 	static void test() {
+		
 		// 输出一个参数
 		Supplier<String> sup = () -> "youngwa";
 		System.out.println(sup.get());
@@ -44,6 +48,14 @@ public class DemoLambda {
 	}
 
 	public static void main(String[] args) {
-		test();
+		Map<Long, Long> countMap = new TreeMap<>();
+		countMap.put(1l, 2l);
+		countMap.put(2l, 9l);
+		countMap.put(3l, 4l);
+		countMap.put(4l, 6l);
+		for (Map.Entry<Long, Long> value : countMap.entrySet()) {
+			System.out.println(value);
+		}
+	
 	}
 }
